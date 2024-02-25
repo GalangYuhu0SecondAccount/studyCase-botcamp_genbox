@@ -4,6 +4,7 @@ import { Link, Outlet } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
+        <h2><center>Welcom Sayang</center></h2>
         {/* <main>
             <Outlet />
         </main> */}
