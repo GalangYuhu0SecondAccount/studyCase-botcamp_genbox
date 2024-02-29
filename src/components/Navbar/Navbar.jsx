@@ -16,6 +16,10 @@ const Navbar = () => {
           {" "}
           <Link to="/register">Register</Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/MyShopUi">Myshop</Link>
+        </li>
       </ul>
     </div>
   );
