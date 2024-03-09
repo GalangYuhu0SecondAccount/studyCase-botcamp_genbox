@@ -67,3 +67,10 @@ button {
     opacity: 1;
     cursor: pointer;
   }
+
+  .text-head {
+    width: 100%;
+    margin: 50px;
+    padding: 10px;
+    
+  }
