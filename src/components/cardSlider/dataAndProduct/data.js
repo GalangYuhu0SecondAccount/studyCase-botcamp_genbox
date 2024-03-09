@@ -71,3 +71,44 @@ export const Product = [
     },
 
 ]
+
+
+export const dataProduct = [
+  {
+    id : 1,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu"  
+  },
+  {
+    id : 2,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu"  
+  },
+  {
+    id : 3,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu"  
+  },
+  {
+    id : 4,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu"  
+  },
+  {
+    id : 5,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu"  
+  },
+  {
+    id : 6,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu"  
+  }
+
+]

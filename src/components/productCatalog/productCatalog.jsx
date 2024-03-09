@@ -1,9 +1,10 @@
 import React from "react";
 import "../productCatalog/productCatalog.css";
+import { dataProduct } from "../cardSlider/dataAndProduct/data";
 import { useState } from "react";
 
 const ProductCatalog = () => {
-   const [States, setStates] = useState();
+   const [States, setStates] = useState(dataProduct);
 
    return (
       <div className="product-catalog">
@@ -13,19 +14,18 @@ const ProductCatalog = () => {
 
          {/* Create catalog product */}
          <div className="catalog-grid">
-            <div className="catalog-item">
-               <img src="" alt="" className="images_product" />
-               <p className="name_product">Product 1</p>
-               <p className="price">Rp,32000</p>
-               <p className="desc">desr</p>
-               <button>checkout</button>
-            </div><br />
-            <div className="catalog-item"></div>
-            <div className="catalog-item"></div>
-            <div className="catalog-item"></div>
-            <div className="catalog-item"></div>
-            <div className="catalog-item"></div>
-            <div className="catalog-item"></div>
+
+
+            {/* mapping data  */}
+            {States.map((i) => (
+               <div className="catalog-item" key={i.id}>
+                  <img src="" alt="" className="images_product" />
+                  <p className="name_product">{i.nameProduct}</p>
+                  <p className="price">{i.price}</p>
+                  <p className="desc">{i.description}r</p>
+                  <button>checkout</button>
+               </div>
+            ))}
          </div>
       </div>
    );
