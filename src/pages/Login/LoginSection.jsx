@@ -1,11 +1,11 @@
 import React from "react";
-import "../../pages/Login/LoginSection.css";
+import "../Login/LoginSection.css";
 
 const Logins = () => {
   return (
     <div className="head_Section">
       <div className="child_card_center">
-        <div className="card">
+        <div className="card_head">
           <form className="sign-up">
             <div className="form-group">
               <label>
@@ -15,7 +15,7 @@ const Logins = () => {
                 <input type="tezt" placeholder="Password" />
               </label>
               <button type="button" className="submit">
-                Login
+              <span>Login</span>  
               </button>
             </div>
           </form>

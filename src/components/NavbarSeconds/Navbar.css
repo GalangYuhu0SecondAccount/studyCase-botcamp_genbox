@@ -112,6 +112,9 @@ input {
 @media only screen and (max-width: 768px) {
     .headerNavbar {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .h4_content {
@@ -134,4 +137,31 @@ input {
         padding: 8px 16px; 
         margin-right: 5px; 
     }
+}
+
+
+
+.hero_image {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.image_middle {
+    display: flex;
+    justify-items: center;
+    padding: 3px;
+    align-items: center;
+}
+
+.width_image {
+    width: 100%;
+    height: 459px;
+    top: 90%;
+    left: 97px;
+}
+
+.diskon {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
 }

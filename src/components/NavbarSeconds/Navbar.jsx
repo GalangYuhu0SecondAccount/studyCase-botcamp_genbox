@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../NavbarSeconds/Navbar.css";
+import  Images from   "../../assets/Img_1.png"
+import"../NavbarSeconds/Navbar.css";
 
 const Navbars = () => {
   return (
+    <div>
     <header>
       <div className="menus">
         <ul className="ul_menus">
@@ -32,6 +34,15 @@ const Navbars = () => {
             </div>
       </div>
     </header>
+    <div className="hero_image">
+      <div className="image_middle">
+        <img src={Images} alt=""  className="width_image"/>
+      </div>
+    </div>
+    <div className="diskon">
+    <h2>diskon 12.12 </h2>
+    </div>
+    </div>
   );
 };
 

@@ -23,7 +23,7 @@
     width: 50%;
   }
   
-  .card {
+  .card_head {
     background-color: var(--primary-color);
     height: 60vh;
     margin: 30px;
@@ -35,7 +35,7 @@
   }
   
   .form-group {
-    width: 80%;
+    width: 90%;
   }
   
   form {
@@ -59,12 +59,15 @@
   button {
     width: 100%;
     height: 36px;
-    color: #0e0808;
+    color: #0D6EFD;
     font-size: 15px;
     cursor: pointer;
     border-radius: 15px;
     background: var(--button-colot);
     margin-top: 20px;
+  }
+  span {
+    color: white;
   }
   
   button:hover {
@@ -76,7 +79,7 @@
   }
   
   p {
-    color: #333;
+    color: #181616;
     font-family: Cocogoose;
     font-size: 13px;
     font-style: normal;
@@ -96,10 +99,10 @@
 
   @media (max-width: 768px) { /* Responsif untuk perangkat dengan lebar maksimal 768px, misalnya smartphone */
     .child_card_center {
-      width: 90%; /* Mengurangi lebar agar sesuai dengan smartphone */
+      width: 100%; /* Mengurangi lebar agar sesuai dengan smartphone */
     }
   
-    .card {
+    .card_head {
       margin: 10px; /* Mengurangi margin agar muat di layar kecil */
     }
   }
