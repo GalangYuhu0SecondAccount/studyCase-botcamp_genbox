@@ -19,7 +19,7 @@ const ProductCatalog = () => {
                <p className="price">Rp,32000</p>
                <p className="desc">desr</p>
                <button>checkout</button>
-            </div>
+            </div><br />
             <div className="catalog-item"></div>
             <div className="catalog-item"></div>
             <div className="catalog-item"></div>
