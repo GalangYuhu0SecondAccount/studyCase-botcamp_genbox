@@ -24,7 +24,6 @@ const ProductCatalog = () => {
                   <p className="price">{i.price}</p>
                   <p className="desc">{i.description}r</p>
                   <button>checkout</button>
-                  <p></p>
                </div>
             ))}
          </div>
