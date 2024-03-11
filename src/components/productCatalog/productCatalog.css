@@ -79,3 +79,14 @@
       text-align: end;
       font-size: 20px;
     }
+
+    .pagination {
+      display: flex;
+      border: 1px solid #fff;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    
+    .pagination button {
+      padding: 10px;
+    }
