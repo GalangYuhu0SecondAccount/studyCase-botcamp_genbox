@@ -1,8 +1,8 @@
 import React from "react";
-
+import "../pagination/pagination.css"
 
 const Pagination = ({postPerPage , length , handlePagination , currentPage}) => {
-    let PaginationNumber = []
+    let PaginationNumber = [];
 
 
     for (let i = 1; i <= Math.ceil( length / postPerPage );  i++) {
