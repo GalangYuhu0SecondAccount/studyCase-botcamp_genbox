@@ -1,10 +1,10 @@
 import React from "react";
 import "../productCatalog/productCatalog.css";
-import { dataProduct } from "../cardSlider/dataAndProduct/data";
-import { useState } from "react";
+import {useSelector } from "react-redux";
+import ButtonCatalog from "./buttonCatalog";
 
 const ProductCatalog = () => {
-   const [States, setStates] = useState(dataProduct);
+   const product = useSelector(state  => state.data.data)
 
    return (
       <div className="product-catalog">
@@ -17,12 +17,15 @@ const ProductCatalog = () => {
 
 
             {/* mapping data  */}
-            {States.map((i) => (
+            {product.map((i) => (
                <div className="catalog-item" key={i.id}>
                   <img src={i.image} alt="" className="images_product" />
                   <p className="name_product">{i.nameProduct}</p>
                   <p className="price">{i.price}</p>
-                  <p className="desc">{i.description}r</p>
+                  <p className="desc">{i.description}</p>
+                  <p className="desc">
+                     <ButtonCatalog  />
+                     </p>  
                   <button>checkout</button>
                </div>
             ))}
