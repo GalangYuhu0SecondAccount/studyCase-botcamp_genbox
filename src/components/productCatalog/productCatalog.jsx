@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../productCatalog/productCatalog.css";
 import { useSelector } from "react-redux";
 import ButtonCatalog from "./buttonCatalog";
-import Pagination from "../pagination/pagination";
+import Pagination from "../pagination/pagination.jsx";
 
 const ProductCatalog = () => {
 
