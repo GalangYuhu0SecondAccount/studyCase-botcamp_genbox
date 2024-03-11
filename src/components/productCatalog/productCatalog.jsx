@@ -1,10 +1,10 @@
 import React from "react";
 import "../productCatalog/productCatalog.css";
-import {useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import ButtonCatalog from "./buttonCatalog";
 
 const ProductCatalog = () => {
-   const product = useSelector(state  => state.data.data)
+   const product = useSelector((state) => state.data.data);
 
    return (
       <div className="product-catalog">
@@ -14,8 +14,6 @@ const ProductCatalog = () => {
 
          {/* Create catalog product */}
          <div className="catalog-grid">
-
-
             {/* mapping data  */}
             {product.map((i) => (
                <div className="catalog-item" key={i.id}>
@@ -23,9 +21,9 @@ const ProductCatalog = () => {
                   <p className="name_product">{i.nameProduct}</p>
                   <p className="price">{i.price}</p>
                   <p className="desc">{i.description}</p>
-                  <p className="desc">
-                     <ButtonCatalog  />
-                     </p>  
+                  <span className="icons">
+                    <p><ButtonCatalog /> </p> 
+                  </span>
                   <button>checkout</button>
                </div>
             ))}
