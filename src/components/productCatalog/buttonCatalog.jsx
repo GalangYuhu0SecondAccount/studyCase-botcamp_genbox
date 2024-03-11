@@ -7,7 +7,7 @@ import { removeLike, addLike } from "../productCatalog/productCatalogSlice.js";
 
 const ButtonCatalog = () => {
     const [isLike , setisLike ] = useState(false)
-    const [Like , setLike ] = useState(450)
+    const [Like , setLike ] = useState(10)
 
 
         const dispatch = useDispatch();
@@ -26,10 +26,9 @@ const ButtonCatalog = () => {
 
     return (
         <>
-            <p onClick={handleCLick} aria-label="like">
-                <AiFillLike  color={isLike  ?  "blue" : "black"} />
-                <p>hasil :{Like}</p>
-            </p>
+            <span onClick={handleCLick} aria-label="like">
+                <AiFillLike   color={isLike  ?  "blue" : "black"} />
+            </span>
         </>
     );
     };
