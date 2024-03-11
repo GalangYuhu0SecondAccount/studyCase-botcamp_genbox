@@ -1,12 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { dataProduct } from "../../components/cardSlider/dataAndProduct/data";
 
+const initialState = {
+  data: dataProduct,
+  loading: false,
+};
+
 const dataProducts = createSlice({
   name: "data",
-  initialState: {
-    data: dataProduct,
-    loading: false,
-  },
+  initialState,
   reducers: {
     addLike: (state, action) => {
       const { ProductId } = action.payload;
@@ -21,9 +23,12 @@ const dataProducts = createSlice({
         if (removeLikes && data.likes > 0) {
             removeLikes.likes--;
         }
+  },
+  ShowData : (state , action) => {
+    state.data = action.payload
   }
   },
 });
 
-export const { addLike , removeLike } = dataProducts.actions;
+export const {ShowData , addLike , removeLike } = dataProducts.actions;
 export default dataProducts.reducer;
