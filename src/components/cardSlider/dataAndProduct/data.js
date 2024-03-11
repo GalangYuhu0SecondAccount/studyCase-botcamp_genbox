@@ -124,6 +124,46 @@ export const dataProduct = [
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
-  }
+  },
+  {
+    id : 7,
+    image:images,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu",
+    likes: 0  
+  },
+  {
+    id : 8,
+    image:images,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu",
+    likes: 0  
+  },
+  {
+    id : 9,
+    image:images,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu",
+    likes: 0  
+  },
+  {
+    id : 10,
+    image:images,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu",
+    likes: 0  
+  },
+  {
+    id : 12,
+    image:images,
+    nameProduct : "product 1",
+    price : "Rp,23000",
+    description : "di test dulu",
+    likes: 0  
+  },
 
 ]
