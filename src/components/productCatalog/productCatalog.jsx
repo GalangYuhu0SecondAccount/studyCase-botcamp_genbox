@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from "react";
 import "../productCatalog/productCatalog.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ButtonCatalog from "./buttonCatalog";
 import Pagination from "../pagination/pagination.jsx";
+import {ShowData} from "../productCatalog/productCatalogSlice.js"
+import { dataProduct } from "../cardSlider/dataAndProduct/data.js";
 
 const ProductCatalog = () => {
 
    const [ currentPage , setcurrentPage ] = useState(1)
-   const [ postPerPage , setpostPerPage ] = useState(0)
+   const [ postPerPage , setpostPerPage ] = useState(6)
+   const [ loading , setloading ] = useState(true)
+
    
 
    // use redux
    const product = useSelector((state) => state.data.data);
 
-
+   const dispatch = useDispatch()
 
    const indexOflastPost = currentPage * postPerPage;
    const indexOfFirstPost = indexOflastPost - postPerPage;
@@ -23,6 +27,9 @@ const ProductCatalog = () => {
    const handlePagination = (pageNumber) => [
       setcurrentPage(pageNumber)
    ]
+
+
+
 
    return (
          <div className="product-catalog">

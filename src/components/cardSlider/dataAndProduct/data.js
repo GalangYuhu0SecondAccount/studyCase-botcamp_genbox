@@ -80,7 +80,7 @@ export const dataProduct = [
   {
     id : 1,
     image : images,
-    nameProduct : "product 1",
+    nameProduct : "product 2",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0
@@ -88,7 +88,7 @@ export const dataProduct = [
   {
     id : 2,
     image: images,
-    nameProduct : "product 1",
+    nameProduct : "product 3",
     price : "Rp,23000",
     description : "di test dulu",  
     likes: 0
@@ -96,7 +96,7 @@ export const dataProduct = [
   {
     id : 3,
     image: images,
-    nameProduct : "product 1",
+    nameProduct : "product 4",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
@@ -104,7 +104,7 @@ export const dataProduct = [
   {
     id : 4,
     image: images,
-    nameProduct : "product 1",
+    nameProduct : "product 5",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
@@ -112,7 +112,7 @@ export const dataProduct = [
   {
     id : 5,
     image: images,
-    nameProduct : "product 1",
+    nameProduct : "product 6",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
@@ -120,7 +120,7 @@ export const dataProduct = [
   {
     id : 6,
     image:images,
-    nameProduct : "product 1",
+    nameProduct : "product 7",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
@@ -128,7 +128,7 @@ export const dataProduct = [
   {
     id : 7,
     image:images,
-    nameProduct : "product 1",
+    nameProduct : "product 8",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
@@ -136,7 +136,7 @@ export const dataProduct = [
   {
     id : 8,
     image:images,
-    nameProduct : "product 1",
+    nameProduct : "product 9",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
@@ -144,7 +144,7 @@ export const dataProduct = [
   {
     id : 9,
     image:images,
-    nameProduct : "product 1",
+    nameProduct : "product 10",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
@@ -152,15 +152,15 @@ export const dataProduct = [
   {
     id : 10,
     image:images,
-    nameProduct : "product 1",
+    nameProduct : "product 11",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
   },
   {
-    id : 12,
+    id : 11,
     image:images,
-    nameProduct : "product 1",
+    nameProduct : "product 12",
     price : "Rp,23000",
     description : "di test dulu",
     likes: 0  
