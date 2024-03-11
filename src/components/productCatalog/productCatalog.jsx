@@ -19,7 +19,7 @@ const ProductCatalog = () => {
             {/* mapping data  */}
             {States.map((i) => (
                <div className="catalog-item" key={i.id}>
-                  <img src="" alt="" className="images_product" />
+                  <img src={i.image} alt="" className="images_product" />
                   <p className="name_product">{i.nameProduct}</p>
                   <p className="price">{i.price}</p>
                   <p className="desc">{i.description}r</p>

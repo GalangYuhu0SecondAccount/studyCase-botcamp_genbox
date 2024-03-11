@@ -1,5 +1,8 @@
 
- export const responsive = {
+import images from "../../../assets/pengelolaan.png"
+
+
+export const responsive = {
     superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 1024 },
@@ -76,36 +79,42 @@ export const Product = [
 export const dataProduct = [
   {
     id : 1,
+    image : images,
     nameProduct : "product 1",
     price : "Rp,23000",
     description : "di test dulu"  
   },
   {
     id : 2,
+    image: images,
     nameProduct : "product 1",
     price : "Rp,23000",
     description : "di test dulu"  
   },
   {
     id : 3,
+    image: images,
     nameProduct : "product 1",
     price : "Rp,23000",
     description : "di test dulu"  
   },
   {
     id : 4,
+    image: images,
     nameProduct : "product 1",
     price : "Rp,23000",
     description : "di test dulu"  
   },
   {
     id : 5,
+    image: images,
     nameProduct : "product 1",
     price : "Rp,23000",
     description : "di test dulu"  
   },
   {
     id : 6,
+    image:images,
     nameProduct : "product 1",
     price : "Rp,23000",
     description : "di test dulu"  
