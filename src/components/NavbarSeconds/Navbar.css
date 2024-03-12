@@ -51,16 +51,18 @@ header {
 
 }
 
-.input {
+.inputs {
     justify-items: center;
     align-items: center;
     background-color: aliceblue;
     width: 80%;
     height: 15%;
+    padding: 10px;
 }
-input {
-    border-bottom: none;
+.inputs input {
     height: auto;
+    width: 100%;
+    border-bottom: none;
 }
 .test {
     display: flex;

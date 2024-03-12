@@ -23,7 +23,7 @@ const Navbars = () => {
       <div className="headerNavbar">
         <h4 className="h4_content">MySHop</h4>
             <div className="test">
-                 <div className="input">
+                 <div className="inputs">
                         <input type="text" placeholder="" required autoComplete="true" />
                         
                 </div>
