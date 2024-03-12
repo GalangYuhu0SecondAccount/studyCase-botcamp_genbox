@@ -1,31 +1,33 @@
 import React from "react";
-import {createBrowserRouter } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
-import Logins from "../pages/Login/LoginSection";
-import IndexRoot from "../pages/HomePage";
-import NotFound from "../components/NotFound/NotFound";
+import { createBrowserRouter } from "react-router-dom";
 
+const Navbar = React.lazy(() => import("../components/Navbar/Navbar"));
+const Logins = React.lazy(() => import("../pages/Login/LoginSection"));
+const IndexRoot = React.lazy(() => import("../pages/HomePage"));
+const NotFound = React.lazy(() => import("../components/NotFound/NotFound"));
+const UserLogin = React.lazy(() => import("../components/UserLogin/userLogin"));
 
-const router = createBrowserRouter(
-    [
-        {
-            path : '/',
-            element: <Navbar />,
-        },
-        {
-            path : '/login',
-            element: <Logins />,
-        },
-        {
-            path : '/MyShopUi',
-            element: <IndexRoot />,
-        },
-        {
-            path : '*',
-            element: <NotFound />,
-        },
-    ]
-)
+const router = createBrowserRouter([
+   {
+      path: "/",
+      element: <Navbar />,
+   },
+   {
+      path: "/login",
+      element: <Logins />,
+   },
+   {
+      path: "/MyShopUi",
+      element: <IndexRoot />,
+   },
+   {
+      path: "/userLogin",
+      element: <UserLogin />,
+   },
+   {
+      path: "*",
+      element: <NotFound />,
+   },
+]);
 
-
-export default router
+export default router;
