@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { BsCart3 } from "react-icons/bs";
@@ -10,6 +10,21 @@ const NavbarUser = () => {
    const [open, setopen] = useState(false);
 
    const menuRef = useRef();
+
+//    fungsi => menghilangkan menu tanpa harus meng klik icon User lagi 
+   useEffect(() => {
+      const handler = (e) => {
+         if (!menuRef.current.contains(e.target)) {
+            setopen(false);
+            console.log(menuRef.current);
+         }
+      };
+      document.addEventListener("mousedown", handler);
+
+      return () => {
+         document.removeEventListener("mousedown", handler);
+      };
+   });
 
    return (
       <div>
