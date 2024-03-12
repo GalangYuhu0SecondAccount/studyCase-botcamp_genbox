@@ -5,7 +5,7 @@ const Navbar = React.lazy(() => import("../components/Navbar/Navbar"));
 const Logins = React.lazy(() => import("../pages/Login/LoginSection"));
 const IndexRoot = React.lazy(() => import("../pages/HomePage"));
 const NotFound = React.lazy(() => import("../components/NotFound/NotFound"));
-const UserLogin = React.lazy(() => import("../components/UserLogin/userLogin"));
+const UserLogin = React.lazy(() => import("../components/ValidaUserLogin/NavbarUser/NavbarUser"));
 
 const router = createBrowserRouter([
    {
