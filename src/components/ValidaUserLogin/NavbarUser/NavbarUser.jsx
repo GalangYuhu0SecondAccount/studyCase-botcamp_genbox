@@ -30,8 +30,9 @@ const NavbarUser = () => {
                 </div>
         </div>
             <div className="comp_Button">
-                <span className="button1">button1</span>
-                <span className="button2">button2</span>
+                <h2>test</h2>
+                {/* <span className="button1">button1</span> */}
+                {/* <span className="button2">button2</span> */}
             </div>
       </div>
     </header>
