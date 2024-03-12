@@ -20,6 +20,7 @@ const NavbarUser = () => {
           </li>
         </ul>
       </div>
+      
       <div className="headerNavbar">
         <h4 className="h4_content">MySHop</h4>
             <div className="test">
