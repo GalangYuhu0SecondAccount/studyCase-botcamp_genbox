@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: aliceblue;
+  width: 100%;
+  height: auto; /* Mengubah ketinggian menjadi otomatis untuk konten yang responsif */
+  margin-bottom: 10px;
+  line-height: normal;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: #0d6efd;
+  padding: 10px; /* Menambahkan padding untuk konten responsif */
+}
+
+.h4_content {
+  /* margin-left: 20px; Mengurangi margin untuk konten responsif */
+  margin: 30px;
+  padding: 12px; /* Menambahkan padding untuk konten responsif */
+  color: black;
+  font-size: large; /* Mengurangi ukuran font untuk konten responsif */
+}
+
+.ul_menus {
+  display: flex;
+  justify-content: flex-start; /* Menggeser menu ke kanan */
+  margin-bottom: 2%;
+  list-style-type: none;
+}
+
+.ul_menus li {
+  margin: 0 10px; /* Mengurangi margin antara item menu */
+}
+
+.ul_menus li a {
+  text-decoration: none;
+  color: black;
+}
+
+.headerNavbar {
+  display: flex;
+  width: 89%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  justify-items: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: 80%;
+  height: 15%;
+  padding: 10px;
+}
+.inputs input {
+  height: auto;
+  width: 100%;
+  border-bottom: none;
+}
+.test {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.comp_Button {
+  display: flex;
+}
+
+.comp_Button .button1,
+.comp_Button .button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #e5e8eb;
+  color: rgb(7, 6, 6);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.comp_Button .button1:hover,
+.comp_Button .button2:hover {
+  background-color: #0957c3;
+}
+
+.comp_Button .button1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.comp_Button .button2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Menambahkan aturan media query untuk tampilan responsif */
+@media only screen and (max-width: 768px) {
+  .headerNavbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .h4_content {
+    margin: 10px;
+    padding: 8px;
+    font-size: medium;
+  }
+
+  .ul_menus {
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .comp_Button .button1,
+  .comp_Button .button2 {
+    padding: 8px 16px;
+    margin-right: 5px;
+  }
+}
+
+.hero_image {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.image_middle {
+  display: flex;
+  justify-items: center;
+  padding: 3px;
+  align-items: center;
+}
+
+.width_image {
+  width: 100%;
+  height: 459px;
+  top: 90%;
+  left: 97px;
+}
+
+.diskon {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
