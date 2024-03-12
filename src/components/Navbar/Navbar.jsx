@@ -20,6 +20,10 @@ const Navbar = () => {
           {" "}
           <Link to="/MyShopUi">Myshop</Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/userLogin">UserLogin</Link>
+        </li>
       </ul>
     </div>
   );
