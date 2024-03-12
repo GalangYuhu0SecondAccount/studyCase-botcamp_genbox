@@ -68,36 +68,12 @@ header {
   align-items: center;
 }
 
+.userList {
+  font-size: 30px;
+  margin: 25px;
+}
 .comp_Button {
   display: flex;
-}
-
-.comp_Button .button1,
-.comp_Button .button2 {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-right: 10px;
-  background-color: #e5e8eb;
-  color: rgb(7, 6, 6);
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-}
-
-.comp_Button .button1:hover,
-.comp_Button .button2:hover {
-  background-color: #0957c3;
-}
-
-.comp_Button .button1 {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.comp_Button .button2 {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 /* Menambahkan aturan media query untuk tampilan responsif */
@@ -124,11 +100,6 @@ header {
     margin-bottom: 10px;
   }
 
-  .comp_Button .button1,
-  .comp_Button .button2 {
-    padding: 8px 16px;
-    margin-right: 5px;
-  }
 }
 
 .hero_image {
@@ -155,3 +126,61 @@ header {
   margin: 0;
   padding: 10px;
 }
+.dropdown-menu {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #20445c;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  width: 200px;
+}
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: white;
+  transform: rotate(45deg);
+}
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu ul li p {
+  padding: 10px 0;
+
+  color: rgb(226, 240, 240);
+  border-top: 1px solid rgba(83, 62, 62, 0.05);
+}
+
+.dropdown-menu ul li:hover p {
+  color: rgb(82, 79, 79);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.icons1:hover {
+    /* Tambahkan properti CSS yang ingin Anda terapkan saat ikon dihover di sini */
+    color: rgb(55, 141, 221); /* Misalnya, mengubah warna ikon menjadi merah saat dihover */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat dihover */
+  }
+
