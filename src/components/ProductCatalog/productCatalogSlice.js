@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { dataProduct } from "../../components/cardSlider/dataAndProduct/data";
+import { dataProduct } from "../../assets/data.js";
 
 const initialState = {
   data: dataProduct,

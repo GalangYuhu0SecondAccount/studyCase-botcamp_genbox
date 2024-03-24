@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import "../productCatalog/productCatalog.css";
+import "./productCatalog.css";
 import { useDispatch, useSelector } from "react-redux";
-import ButtonCatalog from "./buttonCatalog";
-import Pagination from "../pagination/pagination.jsx";
-import {ShowData} from "../productCatalog/productCatalogSlice.js"
-import { dataProduct } from "../cardSlider/dataAndProduct/data.js";
+import ButtonCatalog from "./buttonCatalog.jsx";
+import Pagination from "../Pagination/pagination.jsx";
+// import {ShowData} from "./productCatalogSlice.js"
+// import { dataProduct } from "../cardSlider/dataAndProduct/data.js";
 
 const ProductCatalog = () => {
 
    const [ currentPage , setcurrentPage ] = useState(1)
    const [ postPerPage , setpostPerPage ] = useState(6)
-   const [ loading , setloading ] = useState(true)
+   // const [ loading , setloading ] = useState(true)
 
    
 
@@ -48,8 +48,8 @@ const ProductCatalog = () => {
                      <p className="desc">{i.description}</p>
                      <span className="icons">
                         <p><ButtonCatalog /> </p> 
-                     </span>
                      <button>checkout</button>
+                     </span>
                   </div>
                ))}
             </div>

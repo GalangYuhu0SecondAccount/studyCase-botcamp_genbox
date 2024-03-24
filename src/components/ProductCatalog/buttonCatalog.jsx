@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { AiFillLike } from "react-icons/ai";
 
-
-import { removeLike, addLike } from "../productCatalog/productCatalogSlice.js";
+import { removeLike, addLike } from "./productCatalogSlice.js";
 
 const ButtonCatalog = () => {
     const [isLike , setisLike ] = useState(false)

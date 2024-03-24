@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../cardSlider/CardSLider.css";
-import { responsive, Product } from "./dataAndProduct/data";
+import { responsive, Product } from "../../assets/data.js";
 import Products from "./dataAndProduct/products";
 
 const CardSlider = () => {
